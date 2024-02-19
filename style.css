@@ -17,7 +17,7 @@ form {
 .labelinput {
     display: flex;
     flex-direction: column;
-    height: 50px;
+    height: 60px;
     width: 250px;
 }
 
@@ -25,4 +25,11 @@ input[type="text"], input[type="number"], input[type="mail"], input[type="button
     border-radius: 5px;
     border: none;
     height: 22px;
+}
+
+p {
+    margin: 0;
+    font-size: 12px;
+    font-style: italic;
+    color: white;
 }

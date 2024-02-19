@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Mon formulaire</h1>
-    <form action="">
+    <form action="" method="">
         <div class="line">
             <div class="labelinput">
                 <label for="firstname">Prénom:</label>
@@ -50,7 +50,7 @@
         <div class="line">
             <div class="labelinput">
                 <label for="postalcode">Code postal:</label>
-                <input type="number" id="postalcode">
+                <input type="text" id="postalcode">
             </div>
             <div class="labelinput">
                 <label for="city">Ville:</label>
@@ -59,8 +59,12 @@
         </div>
         <div class="line">
             <div class="labelinput">
-                <label for="work">Métier:</label>
-                <input type="text" id="work">
+                <label for="work-select">Métier:</label>
+                <select name="work" id="work-select">
+                    <option value="front" selected>Développeur front-end</option>
+                    <option value="back" selected>Développeur back-end</option>
+                    <option value="fullstack" selected>Développeur full stack</option>
+                </select>
             </div>
             <div class="labelinput">
                 <label for="nationality-select">Nationalité:</label>
@@ -76,7 +80,6 @@
                     <option value="moroccan">Marocain</option>
                     <option value="tunisian">Tunisien</option>
                     <option value="palestinian">Palestinien</option>
-        
                 </select>
             </div>
         </div>
@@ -93,26 +96,26 @@
 
         <div class="line">
             <div class="labelinput">
-                <label for="socialsecuritynumber">Numéro de sécurité social:</label>
-                <input type="text">
+                <label for="socialsecuritynumber">Numéro de sécurité sociale:</label>
+                <input type="text" id="socialsecuritynumber">
             </div>
             <div class="labelinput">
                 <label for="passportnumber">Numéro de passeport:</label>
-                <input type="text">
+                <input type="text" id="passportnumber">
             </div>
         </div>
         <div class="line">
             <div class="labelinput">
                 <label for="passportdate">Date de délivrance de passeport:</label>
-                <input type="text">
+                <input type="date" id="passportdate">
             </div>
             <div class="labelinput">
                 <label for="passportvalidity">Date de validité du passeport</label>
-                <input type="text">
+                <input type="date" id="passportvalidity">
             </div>
         </div>
         <div class="line">
-            <input type="button" value="Valider">
+            <input type="submit" id="button">
         </div>
     </form>
     <script src="script.js"></script>
