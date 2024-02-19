@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulaire de contact</title>
+</head>
+<body>
+    <h1>Mon formulaire</h1>
+    <form action="">
+        <div class="line">
+            <div class="labelinput">
+                <label for="firstname">Prénom:</label>
+                <input type="text" id="firstname" required>
+            </div>
+            <div class="labelinput">
+                <label for="name">Nom:</label>
+                <input type="text" id="name" required>
+            </div>
+        </div>
+
+        <div class="line">
+            <div class="labelinput">
+                <label for="age">Age:</label>
+                <input type="number" id="age">
+            </div>
+            <div class="labelinput">
+                <legend>Sexe</legend>
+                <div>
+                    <input type="radio" id="man" value="man" name="sexe">
+                    <label for="man">Masculin</label>
+                    <input type="radio" id="woman" value="woman" name="sexe">
+                    <label for="woman">Féminin</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="line">
+            <div class="labelinput">
+                <label for="mail">Adresse e-mail:</label>
+                <input type="mail" id="mail" required>
+            </div>
+            <div class="labelinput">
+                <label for="address">Adresse postale:</label>
+                <input type="text" id="address">
+            </div>
+        </div>
+
+        <div class="line">
+            <div class="labelinput">
+                <label for="postalcode">Code postal:</label>
+                <input type="number" id="postalcode">
+            </div>
+            <div class="labelinput">
+                <label for="city">Ville:</label>
+                <input type="text" id="city">
+            </div>
+        </div>
+        <div class="line">
+            <div class="labelinput">
+                <label for="work">Métier:</label>
+                <input type="text" id="work">
+            </div>
+            <div class="labelinput">
+                <label for="nationality-select">Nationalité:</label>
+                <select name="nationality" id="nationality-select">
+                    <option value="french" selected>Français</option>
+                    <option value="english">Anglais</option>
+                    <option value="german">Allemand</option>
+                    <option value="italian">Italien</option>
+                    <option value="portuguese">Portugais</option>
+                    <option value="dutch">Hollandais</option>
+                    <option value="american">Américain</option>
+                    <option value="algerian">Algérien</option>
+                    <option value="moroccan">Marocain</option>
+                    <option value="tunisian">Tunisien</option>
+                    <option value="palestinian">Palestinien</option>
+        
+                </select>
+            </div>
+        </div>
+        <div class="line">
+            <div class="labelinput">
+                <label for="dateofbirth">Date de naissance:</label>
+                <input type="text" id="dateofbirth">
+            </div>
+            <div class="labelinput">
+                <label for="placeofbirth">Pays de naissance:</label>
+                <input type="text" id="placeofbirth">
+            </div>
+        </div>
+
+        <div class="line">
+            <div class="labelinput">
+                <label for="socialsecuritynumber">Numéro de sécurité social:</label>
+                <input type="text">
+            </div>
+            <div class="labelinput">
+                <label for="passportnumber">Numéro de passeport:</label>
+                <input type="text">
+            </div>
+        </div>
+        <div class="line">
+            <div class="labelinput">
+                <label for="passportdate">Date de délivrance de passeport:</label>
+                <input type="text">
+            </div>
+            <div class="labelinput">
+                <label for="passportvalidity">Date de validité du passeport</label>
+                <input type="text">
+            </div>
+        </div>
+        <div class="line">
+            <input type="button" value="Valider">
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

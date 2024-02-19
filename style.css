@@ -1,0 +1,28 @@
+html {
+    background-color: #815087;
+}   
+    
+form {
+    width: 600px;
+}
+
+.line {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 600px;
+}
+
+.labelinput {
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    width: 250px;
+}
+
+input[type="text"], input[type="number"], input[type="mail"], input[type="button"], select {
+    border-radius: 5px;
+    border: none;
+    height: 22px;
+}
