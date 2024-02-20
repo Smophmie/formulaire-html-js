@@ -1,6 +1,13 @@
 html {
-    background-color: #815087;
+    background-color: #606C38;
+    font-family: "Playfair Display", serif;
+    margin: 10px;
 }   
+
+h1 {
+    color:white;
+    font-size: 35px;
+}
     
 form {
     width: 600px;
@@ -17,17 +24,21 @@ form {
 .labelinput {
     display: flex;
     flex-direction: column;
-    height: 60px;
+    height: 70px;
     width: 250px;
 }
 
-input[type="text"], input[type="number"], input[type="mail"], input[type="button"], select {
+label {
+    margin: 5px 0;
+}
+
+input[type="text"], input[type="number"], input[type="mail"], input[type="button"], input[type="date"], select {
     border-radius: 5px;
     border: none;
     height: 22px;
 }
 
-p {
+span {
     margin: 0;
     font-size: 12px;
     font-style: italic;
